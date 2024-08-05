@@ -1,0 +1,52 @@
+{
+    "data":[
+        {
+            "pathImage" : "assets/gril.avif",
+            "title" : "Sea Turtles: 3-4 Years",
+            "paragraph" : "Contrart to popular belief, loreipsum is not simply random desktop",
+            "numberOfEnrolled" : "28 Enrolled",
+            "numberOfLesson" : "13 Lesson",
+            "price" : "100.00"
+        },
+        {
+            "pathImage" : "assets/child1.jpg",
+            "title" : "Sharks: 4-12 Years",
+            "paragraph" : "Contrart to popular belief, loreipsum is not simply random desktop",
+            "numberOfEnrolled" : "28 Enrolled",
+            "numberOfLesson" : "13 Lesson",
+            "price" : "800.99 "
+        },
+        {
+            "pathImage" : "assets/child2.webp",
+            "title" : "Pro Swimmers: 5-12 Years",
+            "paragraph" : "Contrart to popular belief, loreipsum is not simply random desktop",
+            "numberOfEnrolled" : "28 Enrolled",
+            "numberOfLesson" : "13 Lesson",
+            "price" : "200.00 "
+        },
+        {
+            "pathImage" : "assets/child3.jpg",
+            "title" : "Deep Aqua Aerobics",
+            "paragraph" : "Contrart to popular belief, loreipsum is not simply random desktop",
+            "numberOfEnrolled" : "32 Enrolled",
+            "numberOfLesson" : "11 Lesson",
+            "price" : "500.98 "
+        },
+        {
+            "pathImage" : "assets/child4.jpg",
+            "title" : "Intermediate Swimmer",
+            "paragraph" : "Contrart to popular belief, loreipsum is not simply random desktop",
+            "numberOfEnrolled" : "48 Enrolled",
+            "numberOfLesson" : "24 Lesson",
+            "price" : "300.00 "
+        },
+        {
+            "pathImage" : "assets/child5.jpg",
+            "title" : "Swimming Class For Mini",
+            "paragraph" : "Contrart to popular belief, loreipsum is not simply random desktop",
+            "numberOfEnrolled" : "55 Enrolled",
+            "numberOfLesson" : "23 Lesson",
+            "price" : "740.98 "
+        }
+    ]
+}

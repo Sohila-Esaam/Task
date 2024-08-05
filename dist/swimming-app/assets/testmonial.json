@@ -1,0 +1,31 @@
+{
+    "data":[
+        {
+            "userName" : "Esther Howard",
+            "imagePath" : "assets/1.jpg",
+            "title" : "CEO, Swimclub",
+            "paragraph" : "Simplt dummy text of the printing and typesetting industry. lorem ipsum has been the industry's standard dummy text ever since the unknown printer look a gallerry"
+            
+        },
+        {
+            "userName" : "Leslie Alexander",
+            "imagePath" : "assets/4.jpg",
+            "title" : "CEO, Swimclub",
+            "paragraph" : "Simplt dummy text of the printing and typesetting industry. lorem ipsum has been the industry's standard dummy text ever since the unknown printer look a gallerry"
+        },
+        {
+            "userName" : "Oliver James",
+            "imagePath" : "assets/3.jpg",
+            "title" : "CEO, Swimclub",
+            "paragraph" : "Simplt dummy text of the printing and typesetting industry. lorem ipsum has been the industry's standard dummy text ever since the unknown printer look a gallerry"
+            
+        },
+        {
+            "userName" : "Harry Mason",
+            "imagePath" : "assets/2.jpg",
+            "title" : "CEO, Swimclub",
+            "paragraph" : "Simplt dummy text of the printing and typesetting industry. lorem ipsum has been the industry's standard dummy text ever since the unknown printer look a gallerry"
+            
+        }
+    ]
+}
