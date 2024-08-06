@@ -1,0 +1,188 @@
+<header>
+    <div class="courses-header d-flex justify-content-center align-items-center text-white text-uppercase">
+       <div class="text-center">
+            <h3>get in touch</h3>
+            <p>
+                <a class="text-decoration-none text-white" routerLink="/">home </a>
+                <i class="fa-solid fa-angle-right ms-2"></i><i class="fa-solid fa-angle-right me-2"></i>
+                <a class="text-decoration-none text-white" routerLink="/contact">contact us </a>
+            </p>
+        </div>
+    </div>
+</header> 
+
+<section class="py-70">
+    <div class="container">
+        <div class="row g-4 w-80 mx-auto">
+            <div class="col-md-4">
+                <div class="item-contact d-flex align-items-center">
+                    <div class="icon text-white me-4">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div>
+                        <h6>Office Address</h6>
+                        <p class="text-muted fs-sm m-0">4517 washington manchester, <br> kentucky 39495</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="item-contact d-flex align-items-center">
+                    <div class="icon text-white me-4">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div>
+                        <h6>Phone Number</h6>
+                        <p class="text-muted fs-sm m-0">000 - 5555 - 8888 <br> 000 - 6666 - 9999</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="item-contact d-flex align-items-center">
+                    <div class="icon text-white me-4">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div>
+                        <h6>Email Address</h6>
+                        <p class="text-muted fs-sm m-0">demo120&#64;gmail.com <br>
+                        test3334&#64;gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <div class="row g-4 w-80 mx-auto align-items-center justify-content-center">
+            <div class="col-md-6">
+                <div class="form">
+                    <div class="d-flex align-items-center ms-3 mt-4">
+                        <div class="border-courses me-2"></div>
+                        <p class="h6 m-0">SEND YOUR MESSAGE</p>
+                    </div>
+                    <form class="ms-3" (ngSubmit)="submitRegister(registerForm)" [formGroup]="registerForm">
+                        
+                        <input formControlName="name" type="text" class="form-control my-3" placeholder="Enter you name">
+                        <div *ngIf="registerForm.get('name')?.errors && registerForm.get('name')?.touched" class="alert alert-danger">
+                            <p class="m-0" *ngIf="registerForm.get('name')?.getError('required')">Name is required</p>
+                            <p class="m-0" *ngIf="registerForm.get('name')?.getError('minlength')">Name minLength is 3</p>
+                            <p class="m-0" *ngIf="registerForm.get('name')?.getError('maxlength')">Name maxLength is 10</p>
+                        </div>
+                        
+                        <input formControlName="email" type="email" class="form-control mb-3" placeholder="Enter your email">
+                        <div *ngIf="registerForm.get('email')?.errors && registerForm.get('email')?.touched" class="alert alert-danger">
+                            <P class="m-0" *ngIf="registerForm.get('email')?.getError('required')">Email is required</P>
+                            <P class="m-0" *ngIf="registerForm.get('email')?.getError('email')">Email is invalid</P>
+                        </div>
+
+                        <input formControlName="phone" type="tel" class="form-control mb-3" placeholder="Enter your phone">
+                        <div *ngIf="registerForm.get('phone')?.errors && registerForm.get('phone')?.touched" class="alert alert-danger">
+                            <P class="m-0" *ngIf="registerForm.get('phone')?.getError('required')">Phone is required</P>
+                            <P class="m-0" *ngIf="registerForm.get('phone')?.getError('pattern')">Enter Egyption number</P>
+                        </div>
+
+                        <input formControlName="password" type="password" class="form-control mb-3" placeholder="Enter your password">
+                        <div *ngIf="registerForm.get('password')?.errors && registerForm.get('password')?.touched" class="alert alert-danger">
+                            <P class="m-0" *ngIf="registerForm.get('password')?.getError('required')">Password is required</P>
+                            <P class="m-0" *ngIf="registerForm.get('password')?.getError('pattern')">first letter must be uppercase character</P>
+                        </div>
+
+                        <input formControlName="rePassword" type="password" class="form-control mb-3" placeholder="Enter your rePassword">
+                        <div *ngIf="registerForm.get('rePassword')?.errors && registerForm.get('rePassword')?.touched" class="alert alert-danger">
+                            <P class="m-0" *ngIf="registerForm.get('rePassword')?.getError('required')">rePassword is required</P>
+                            <P class="m-0" *ngIf="registerForm.get('rePassword')?.getError('passwordmatch')">password and rePassword doesn't match</P>
+                        </div>
+
+                        <div *ngIf="errorForm" class="alert alert-danger">
+                            {{errorForm}}
+                        </div>
+
+                        <div *ngIf="successForm" class="alert alert-success">
+                            {{successForm}}
+                        </div>
+
+                        <button type="submit" class="btn rounded-pill text-white mb-5">Submit</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="image-contact">
+                    <img src={{imagesList.man}} class="w-75" alt="photo">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="map w-80 mx-auto">
+    <app-map></app-map>
+</div>
+
+<section class="py-70 bgfooter-color text-white">
+    <div class="container pt-100">
+        <div class="row g-4 w-80 mx-auto">
+            <div class="col-md-4">
+                <div class="item-contact d-flex align-items-center">
+                    <div class="icon text-white me-4">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div>
+                        <h6>Laondon</h6>
+                        <p class="text-secondary fs-sm m-0">4517 washington manchester, <br> kentucky 39495</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="item-contact d-flex align-items-center">
+                    <div class="icon text-white me-4">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div>
+                        <h6>Mosco</h6>
+                        <p class="text-secondary fs-sm m-0">4517 washington manchester, <br> kentucky 39495</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="item-contact d-flex align-items-center">
+                    <div class="icon text-white me-4">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div>
+                        <h6>Paris</h6>
+                        <p class="text-secondary fs-sm m-0">4517 washington manchester, <br> kentucky 39495</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="contacts py-70">
+    <div class="container">
+        <div class="row g-4 w-80 mx-auto">
+            <div class="col-md-3">
+                <div class="imagee">
+                    <img src={{imagesList.bos}} alt="photo">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="imagee">
+                    <img src={{imagesList.dep}} alt="photo">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="imagee">
+                    <img src={{imagesList.bos}} alt="photo">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="imagee">
+                    <img src={{imagesList.pro}} alt="photo">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

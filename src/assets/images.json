@@ -1,0 +1,19 @@
+{
+    "data":[
+        {
+            "logo" : "assets/logo.png",
+            "baby" : "assets/baby.jpg",
+            "child6" : "assets/child6.jpg",
+            "child7" : "assets/child7.jpg",
+            "child8" : "assets/child8.jpg",
+            "childrens" : "assets/childrens.PNG",
+            "person1" : "assets/1.jpg",
+            "person2" : "assets/2.jpg",
+            "person3" : "assets/3.jpg",
+            "man" : "assets/man.png",
+            "bos" : "assets/bos.PNG",
+            "dep" : "assets/dep.PNG",
+            "pro" : "assets/pro.PNG"
+        }
+    ]
+}
