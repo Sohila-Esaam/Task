@@ -11,13 +11,24 @@
     </div>
 </header> 
 
+<div class="btn-group">
+  <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+    Right-aligned menu example
+  </button>
+  <ul class="dropdown-menu dropdown-menu-end">
+    <li><button class="dropdown-item" type="button">Action</button></li>
+    <li><button class="dropdown-item" type="button">Another action</button></li>
+    <li><button class="dropdown-item" type="button">Something else here</button></li>
+  </ul>
+</div>
+
 <section class="py-70">
     <div class="container">
       <div class="row g-4 w-80 mx-auto">
 
         <div class="col-md-9">
           <div class="row g-4">
-            <div *ngFor="let data of dataList" class="col-md-6">
+            <div *ngFor="let data of dataList|search:searchTerm" class="col-md-6">
               <div class="item border p-1">
                 <div class="image position-relative">
                   <img src={{data.pathImage}} style="height: 160px;" class="rounded-2 w-100" alt="photo" />
@@ -52,7 +63,7 @@
               <p class="h6 m-0">COURSE SEARCH</p>
             </div>
             <div class="d-flex mt-3">
-              <input type="email" class="form-control" placeholder="Search..." />
+              <input [(ngModel)]="searchTerm" type="email" class="form-control" placeholder="Search..." />
               <button class="btn text-white">
                 <i class="fa-solid fa-arrow-right"></i>
               </button>

@@ -10,6 +10,8 @@ export class CoursesComponent implements OnInit {
 
   dataList:any;
 
+  searchTerm = ''
+
   constructor(private _ApiService:ApiService) {}
 
   ngOnInit(): void {
